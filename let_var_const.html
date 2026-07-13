@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>var, let and const</title>
+</head>
+
+<body>
+
+    <h2>JavaScript Variables Example</h2>
+
+    <script>
+        var name = "Rahul";
+        console.log("var:", name);
+
+        name = "Amit";
+        console.log("Updated var:", name);
+
+        let age = 20;
+        console.log("let:", age);
+
+        age = 21;
+        console.log("Updated let:", age);
+
+        const country = "India";
+        console.log("const:", country);
+
+        if (true) {
+            var x = 100;
+            let y = 200;
+            const z = 300;
+
+            console.log("Inside Block");
+            console.log("x =", x);
+            console.log("y =", y);
+            console.log("z =", z);
+        }
+
+        console.log("Outside Block");
+        console.log("x =", x);
+    </script>
+
+</body>
+
+</html>

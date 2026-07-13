@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Operators Demo</title>
+</head>
+<body>
+
+
+<script>
+
+// Arithmetic operators
+let a = 10, b = 3;
+console.log(a + b, a - b, a * b, a / b, a % b, a ** b);
+
+// Assignment operators
+let x = 10;
+x += 5;
+x -= 2;
+console.log(x);
+
+// Comparison operators
+console.log(10 == "10", 10 === "10", 10 != "10", 10 !== "10", 10 > 5);
+
+// Logical operators
+let age = 20;
+console.log(age > 18 && age < 30, age < 18 || age > 30);
+
+// Increment / Decrement operators
+let n = 5;
+console.log(++n, n++, n);
+
+// String operator
+console.log("Hello" + " " + "World");
+
+// Ternary operator
+let marks = 75;
+console.log(marks >= 40 ? "Pass" : "Fail");
+
+// Nullish coalescing operator
+let command = null;
+console.log(command ?? "Guest");
+
+// Optional chaining operator
+let user = { profile: { city: "Delhi" } };
+console.log(user.profile?.city);
+console.log(user.address?.city);
+
+// typeof and instanceof operators
+console.log(typeof 10, typeof "Hi");
+console.log([] instanceof Array);
+
+// Bitwise operators
+console.log(5 & 3, 5 | 3, 5 ^ 3, ~5, 5 << 1, 5 >> 1);
+
+// Spread operator
+let arr1 = [1, 2];
+let arr2 = [...arr1, 3];
+console.log(arr2);
+
+// Rest operator
+function sum(...nums) {
+    return nums.reduce((a, b) => a + b);
+}
+console.log(sum(1, 2, 3));
+
+// Destructuring
+let person = { name: "Rahul", age: 22 };
+let { name: n1, age: a1 } = person;
+console.log(n1, a1);
+
+// delete operator
+let obj = { x: 10, y: 20 };
+delete obj.x;
+console.log(obj);
+
+// in operator
+console.log("y" in obj);
+
+// new operator
+function Person(name) {
+    this.name = name;
+}
+let p = new Person("John");
+console.log(p.name);
+
+// void operator
+console.log(void 0);
+
+// async / await operator
+async function demo() {
+    let res = await Promise.resolve("Hello Async");
+    console.log(res);
+}
+demo();
+
+// generator (yield operator)
+function* gen() {
+    yield 1;
+    yield 2;
+}
+let g = gen();
+console.log(g.next().value, g.next().value);
+
+</script>
+
+</body>
+</html>
